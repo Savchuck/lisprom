@@ -1,0 +1,39 @@
+.upper{
+	background-image: url(img/up.jpg);
+	background-size: cover;
+	min-height: 90vh;
+	color: white;
+}
+
+.upper-items{
+	backdrop-filter: brightness(60%) blur(5px);
+	height: 90vh;
+	display: flex; 
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upper-items h1{
+	font-style: bold;
+	font-size: 8vw;
+}
+.upper-items h2{
+	font-size: 2vw;
+	
+}
+
+.upper-items button{
+	margin-top:10vh;
+	width: 20vw;
+	height: 10vh;
+	font-size: 1.2vw;
+	font-style: italic;
+	background-color: #8e7601;
+	border:none;
+	border-radius: 20px;
+}
+
+.upper-items svg{
+	margin-top: 5vh;
+
+}
