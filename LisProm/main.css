@@ -1,13 +1,13 @@
 .upper{
 	background-image: url(img/up.jpg);
 	background-size: cover;
-	min-height: 90vh;
+	min-height: 90dvh;
 	color: white;
 }
 
 .upper-items{
 	backdrop-filter: brightness(60%) blur(5px);
-	height: 90vh;
+	height: 90dvh;
 	display: flex; 
 	align-items: center;
     justify-content: center;
@@ -15,25 +15,84 @@
 }
 .upper-items h1{
 	font-style: bold;
-	font-size: 8vw;
+	font-size: 8dvw;
 }
 .upper-items h2{
-	font-size: 2vw;
+	font-size: 2dvw;
 	
 }
 
 .upper-items button{
-	margin-top:10vh;
-	width: 20vw;
-	height: 10vh;
-	font-size: 1.2vw;
+	margin-top:10dvh;
+	width: 20dvw;
+	height: 10dvh;
+	font-size: 1.2dvw;
 	font-style: italic;
-	background-color: #8e7601;
-	border:none;
-	border-radius: 20px;
+	background-color: rgb(142, 118, 1);
+	border: none;
 }
 
 .upper-items svg{
-	margin-top: 5vh;
+	margin-top: 5dvh;
 
+}
+
+.catalog-items{
+	
+	background-image: url(img/brus.jpg);
+	background-position: center;
+	background-size: 100%;
+	width: 300px;
+	height: 300px;
+	transition: all .2s;
+}
+
+.catalog-items:hover{
+	cursor: pointer;
+	background-size: 110%;
+	.cat-item{
+		backdrop-filter: brightness(60%) blur(2px);
+	}
+	.cat-item p{
+		position: relative;
+		opacity: 100;
+		filter: brightness(100%);
+	}
+	.cat-item{
+		background: rgba(142, 118, 1, 0.5);
+	}
+
+}
+.cat-item{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	backdrop-filter: brightness(70%) blur(2px);
+	background: none;
+	transition: all .3s;
+}
+
+
+.cat-item h2{
+	font-weight: bold;
+	transition: all .3s;
+}
+
+.cat-item p{
+	position: absolute;
+	opacity: 0;
+	transition: all .2s;
+	filter: brightness(0);
+}
+.block-catalog{
+	margin: auto;
+	width: 1400px;
+	height: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
