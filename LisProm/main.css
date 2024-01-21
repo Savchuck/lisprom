@@ -15,19 +15,20 @@
 }
 .upper-items h1{
 	font-style: bold;
-	font-size: 8dvw;
+	font-size: 8vw;
 }
 .upper-items h2{
-	font-size: 2dvw;
+	font-size: 3vw;
 	
 }
 
 .upper-items button{
+	color: white;
 	margin-top:10dvh;
 	width: 20dvw;
-	height: 10dvh;
-	font-size: 1.2dvw;
-	font-style: italic;
+	min-height: 8dvh;
+	max-height: 9dvh;
+	font-size: 2.2dvw;
 	background-color: rgb(142, 118, 1);
 	border: none;
 }
@@ -39,6 +40,7 @@
 
 .catalog-items{
 	
+	margin: 15px;
 	background-image: url(img/brus.jpg);
 	background-position: center;
 	background-size: 100%;
@@ -89,10 +91,19 @@
 	filter: brightness(0);
 }
 .block-catalog{
+	color: white;
 	margin: auto;
-	width: 1400px;
-	height: 700px;
+	max-width: 1400px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+}
+.catalog{
+	margin-bottom: 20px;
+}
+
+.top-block{
+	background-color: rgb(51, 57, 62);
+	height: 500px;
+	width: 100%;
 }
