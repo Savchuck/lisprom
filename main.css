@@ -1,0 +1,162 @@
+.upper{
+	background-image: url(img/up.jpg);
+	background-size: cover;
+	height: 90dvh;
+	color: white;
+}
+
+.upper-items{
+	backdrop-filter: brightness(60%) blur(5px);
+	height: 90dvh;
+	display: flex; 
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upper-items h1{
+	font-style: bold;
+	font-size: 8vw;
+}
+.upper-items h2{
+	
+	font-size: 3vw;
+	
+}
+
+.upper-items button{
+	color: white;
+	margin-top:	10dvh;
+	width: 20dvw;
+	height: 10dvh;
+	font-size: 2dvw;
+	background-color: rgb(142, 118, 1);
+	border: none;
+	transition: .3s;
+}
+.upper-items button:hover{
+	background-color: rgb(90, 75, 3);
+
+}
+
+.upper-items svg{
+	margin-top: 5dvh;
+
+}
+
+.catalog-items{
+	
+	margin: 15px;
+	background-image: url(img/brus.jpg);
+	background-position: center;
+	background-size: 100%;
+	width: 300px;
+	height: 300px;
+	transition: all .2s;
+}
+
+.catalog-items:hover{
+	cursor: pointer;
+	background-size: 110%;
+	.cat-item{
+		backdrop-filter: brightness(60%) blur(2px);
+	}
+	.cat-item p{
+		position: relative;
+		opacity: 100;
+		filter: brightness(100%);
+	}
+	.cat-item{
+		background: rgba(142, 118, 1, 0.5);
+	}
+
+}
+.cat-item{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	backdrop-filter: brightness(70%) blur(2px);
+	background: none;
+	transition: all .3s;
+}
+
+
+.cat-item h2{
+	font-weight: bold;
+	transition: all .3s;
+}
+
+.cat-item p{
+	position: absolute;
+	opacity: 0;
+	transition: all .2s;
+	filter: brightness(0);
+}
+
+.cat-item p:hover{
+	color: rgb(64, 64, 64);
+}
+.block-catalog{
+	color: white;
+	margin: auto;
+	max-width: 1400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.catalog{
+	margin-bottom: 20px;
+}
+
+.top-block{
+	background-color: rgb(51, 57, 62);
+	height: 500px;
+	width: 100%;
+}
+@media screen and (max-width: 450px) {
+	.upper-items h1{
+		font-style: bold;
+		font-size: 12vw;
+	}
+	.upper-items h2{
+		
+		font-size: 5vw;
+	}
+	.upper-items button{
+		width: 40dvw;
+		height: 8dvh;
+		font-size: 3dvw;
+		
+	}
+	.upper-items svg{
+		margin-top: 25dvh;
+	
+	}
+		
+};
+
+@media screen and (max-width: 650px) {
+	.upper-items h1{
+		font-style: bold;
+		font-size: 11vw;
+	}
+	.upper-items h2{
+		
+		font-size: 4vw;
+	}
+	.upper-items button{
+		
+		width: 22dvw;
+		height: 10dvh;
+		font-size: 3dvw;
+		
+	}
+	.upper-items svg{
+		margin-top: 20dvh;
+	
+	}
+		
+}
