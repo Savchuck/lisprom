@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="/admin-orders.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<title>Замовлення</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/users/admin">Адмін панель</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../admin/orders">Замовлення</a>
+              <a class="nav-link" href="../admin/drivers">Водії</a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="/login"  tabindex="7" id="exit-button">Вихід
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                      <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </nav>
+
+      <main>
+        <div class="order-sort">
+          <h5>Сортувати: </h5>
+          <select class="form-select" aria-label="Default select example">
+            <option value="1" selected>Показати все</option>
+            <option value="2">Необроблені</option>
+            <option value="3">Передані водію</option>
+            <option value="4">Отримані водієм</option>
+            <option value="5">Доставлені</option>
+            <option value="6">Завершені</option>
+          </select>
+        </div>
+
+  <% orders.forEach(orderGroup => { %>
+    <div class="order-block">
+      <div class="order-header"><span>ID замовлення: <span class="id-order"><%= orderGroup.idorder %></span></span> <span>Статус: <span class="status-order"><%= orderGroup.orders[0].status %></span></span>
+        <span class="open-order-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </span>
+      </div>
+      
+      <div class="order-main">
+      <% orderGroup.orders.forEach(order => { %>
+        <hr>
+        <p>ID продукту: <%= order.idproduct %></p>
+        <p>Кількість: <%= order.quantity %></p>
+        <p>ПІБ: <%= order.username %></p>
+        <p>Email: <%= order.email %></p>
+        <p>Адреса: <%= order.address %></p>
+        <p>Номер телефону: <%= order.number %></p>
+        <hr>
+      <% }); %>
+      <center><button class="add-order-driver">
+        Передати водію
+      </button></center>
+    </div>
+    
+    </div>
+  <% }); %>
+        
+    </main>
+    
+    <script src="/admin-orders.js"></script>
+    <script src="/login-check.js"></script>
+</body>
+</html>
+
+

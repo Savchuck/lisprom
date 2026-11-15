@@ -1,0 +1,53 @@
+.block-login{
+    
+    display: none;
+    margin: auto;
+    width: 50vw;
+}
+.driver{
+    padding: 20px;
+    color: white;
+    background-color: rgb(49, 42, 3);
+    width: 280px;
+}
+.driver-add-button{
+    user-select: none;
+    padding: 20px;
+    color: white;
+    background-color: rgb(231, 230, 220);
+    width: 280px;
+}
+.driver-add-button.rotate{
+    border: 2px solid rgb(142, 142, 142);
+    border-radius: 5px;
+    background-color: rgb(219, 218, 209);
+}
+
+
+.driver-block{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.driver-block button{
+    color: white;
+	width: 150px;
+	height: 40px;
+	background-color: rgb(142, 118, 1);
+	border: none;
+	transition: .3s;
+}
+.driver-block button:hover{
+    background-color: rgb(90, 75, 3);
+}
+
+#plus-icon{
+    transition: transform 0.3s ease;
+}
+
+#plus-icon.rotate {
+    transform: rotate(45deg);
+}

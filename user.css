@@ -1,0 +1,66 @@
+.back-to-main{
+    border: none;
+    background: none;
+    position: fixed;
+    bottom: 10px;
+}
+.orderform-block{
+    background: url(img/tree.jpg);
+    background-size: cover;
+    height: 92vh;
+}
+#orderForm{
+    backdrop-filter: sepia(90%);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 20px;
+}
+#orderForm input{
+    
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+#orderForm label{
+    font-size: 14pt;
+}
+
+.update-info{
+    margin-left: 20px;
+    color: white;
+	width: 170px;
+	height: 50px;
+	background-color: rgb(142, 118, 1);
+	border: none;
+	transition: .3s;
+}
+.update-info:hover{
+    background-color: rgb(90, 75, 3);
+}
+
+
+@media screen and (max-width: 700px) {
+    #orderForm{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #orderForm label{
+        width: 100px;
+        font-size: 12pt;
+    }
+    #orderForm input{
+        font-size: 10pt;
+        width: 170px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+}

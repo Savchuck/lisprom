@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/main.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  
+
+	<title>Ліспромсервіс ЛТД</title>
+</head>
+
+<!--=====================-->
+<!-- ШАПКА-->
+<!--=====================-->
+
+<!--data-bs-theme="dark"-->
+<body >
+
+  <nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"  tabindex="1">Ліспромсервіс ЛТД</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="/"  tabindex="2">ГОЛОВНА</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="/catalog" id="navbarDropdownMenuLink"  aria-expanded="false"  tabindex="3">
+              КАТАЛОГ
+            </a>
+            <ul class="dropdown-menu" >
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/about-us"  tabindex="4">ПРО КОМПАНІЮ</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/contacts"  tabindex="5">КОНТАКТИ</a>
+          </li>
+        </ul> 
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="/login"  tabindex="6" id="login-button">Вхід/Реєстрація
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+</nav>
+
+<main>
+  <div class="upper">
+    <div class="upper-items">
+      <h2>Ліспромсервіс ЛТД</h2>
+      <h1>Пиломатеріали</h1>
+      <h2>БРУС, ДОШКА, РЕЙКА</h2>
+      <button onclick="window.location.href='/catalog'" tabindex="7">Каталог</button>
+      <br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="6vw" height="6vh" fill="currentColor" tabindex="9" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+      </svg>
+    </div>
+  </div>
+
+<!--=====================-->
+<!-- КАТАЛОГ-->
+<!--=====================-->
+
+<div class="catalog">
+  <h1 style="text-align: center; margin: 30px 0 20px 0;">КАТАЛОГ</h1><br>
+  <div class="block-catalog">
+  
+  </div>
+</div>
+
+<!--=====================-->
+<!-- ТОП -->
+<!--=====================-->
+
+
+
+<!--=====================-->
+<!-- ПРО НАС -->
+<!--=====================-->
+<div class="about-block" id="about-us-section">
+  <div class="about-left-part">
+    <img src="img/about.jpg" alt="" height="700px">
+    <div class="about-top-text">
+      <h2>НАЙКРАЩЕ<br>ОБСЛУГОВУВАННЯ<br>КЛІЄНТІВ</h2>
+    </div>
+  </div>
+  <div class="about-right-part">
+    <h4>ПРО НАС</h4>
+    <h1>ДЕРЕВООБРОБНЕ <br>ПІДПРИЄМСТВО</h1>
+    <p>
+      Компанія «Ліспромсервіс ЛТД» – ваш партнер у галузі деревообробної промисловості. Виготовляємо пиломатеріали та реалізуємо по території України. Наша перевага у сумлінному підході, перш за все - якісна продукція та висока культура сервісу.<br><br>
+
+      Ретельно відбираємо сировину з гарною структурою та мінімумом сучків. Такий підхід та сучасне обладнання – формула відмінних матеріалів. Виробничий цикл: заготівля, підготовка, обробка, пакування, логістика. Контроль якості на кожному етапі є обов’язковим.<br><br>
+
+      Маємо широкий асортимент будівельних пиломатеріалів: брус, рейка, дошка обрізна та необрізна. Та продукцію 8-10% вологості: вагонка, дошка підлоги шпунтована, дошка необрізна та терасна, фальшбрус. У нашій компанії ви можете зробити замовлення із хвойних та листяних порід (сосна, дуб, ясен). Завдяки використанню високотехнологічного обладнання ми забезпечуємо висушування у швидкі терміни. Вся продукція сертифікована та екологічна.<br><br>
+
+      Продаж здійснюється великими партіями та у роздріб. Виробляємо лісоматеріали різних розмірів, виконуємо індивідуальні замовлення. Виробничі потужності знаходяться у селі Лісопіль.<br>
+
+      Професіоналізм «Ліспромсервіс ЛТД» до ваших послуг:<br><br>
+    </p>
+    <div class="about-right-part-service-block">
+      <div>
+        <div class="about-right-part-service-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="rgb(142, 118, 1)" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg>
+          <h5>Консультація</h5>
+        </div>
+        <div class="about-right-part-service-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="rgb(142, 118, 1)" class="bi bi-award" viewBox="0 0 16 16">
+            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+          </svg>
+          <h5>Відмінний матеріал</h5>
+        </div>
+      </div>
+      <div class="about-right-part-service-right">
+        <div class="about-right-part-service-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="rgb(142, 118, 1)" class="bi bi-cash-stack" viewBox="0 0 16 16">
+            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+            <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+          </svg>
+          <h5>Зручний спосіб оплати</h5>
+        </div>
+        <div class="about-right-part-service-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="rgb(142, 118, 1)" class="bi bi-truck" viewBox="0 0 16 16">
+            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+          </svg>
+          <h5>Постачання у вказаний термін</h5>
+        </div>
+      </div>
+    </div>
+    <br>
+    <p> 
+      Завжди йдемо на зустріч замовникам та маємо систему лояльності, як для роздрібного клієнта, так і для будівельних, торгових організацій.<br><br>
+
+      На всі запропоновані нами товари ціни вказані у каталозі. З точки зору економіки придбати краще у виробника, а ніж переплачувати посередникам. Ми несемо пряму відповідальність та цінуємо кожного клієнта і завжди зацікавлені у взаємовигідній співпраці. Зателефонуйте або напишіть, щоб отримати детальну інформацію про товар, що вас цікавить.
+    </p>
+  </div>
+</div>
+
+</main>
+
+<!--=====================-->
+<!-- Чому ми -->
+<!--=====================-->
+<div class="why-block-main">
+  <div class="why-block-filter">
+  <center>
+  <h5 style="padding-top:40px; color: rgb(215, 215, 215); filter: drop-shadow(0px 2px 20px black);">ЧОМУ ОБИРАЮТЬ НАС</h5>
+  <h1 style="margin-bottom: 20px;">НАШІ ПЕРЕВАГИ</h1></center>
+  <div class="why-blocks">
+    <div class="why orange">
+      <h3>Професійна консультація</h3>
+      <p>При виготовленні пиломатеріалів всі виробничі процеси ретельно контролюються кваліфікованими фахівцями</p>
+    </div>
+    <div class="why white">
+      <h3>Контроль якості</h3>
+      <p>Наші співробітники розумно нададуть відповідь на будь-яке питання. Допоможуть правильно підібрати матеріал і зорієнтуватися в асортименті</p>
+    </div>
+    <div class="why black">
+      <h3>Чесні ціни</h3>
+      <p>Співпраця з виробником – це завжди прозоре ціноутворення. У нас відсутній перепродаж, тому взаємодіяти вигідніше, ніж із посередниками</p>
+    </div>
+    <div class="why orange">
+      <h3>Екологічність</h3>
+      <p>Дерево, як будівельний матеріал це один із надійних варіант для тих, хто думає про здоров'я і прагне зробити житло екологічно чистим. Та важливо у природі дотримуватись балансу, тому співпрацюємо з лісництвом та турбуємось про довкілля та відновлення лісів</p>
+    </div>
+    <div class="why white">
+      <h3>Сучасні теноголії</h3>
+      <p>Виробничий цех устаткований сучасним обладнанням. Пиломатеріали виглядають естетично та з дотриманням геометричних пропорцій. Продукція, що проходить камерну сушку міцна та має 8-10% вологості</p>
+    </div>
+    <div class="why black">
+      <h3>Асортимент продукції</h3>
+      <p>При виготовленні пиломатеріалів всі виробничі процеси ретельно контролюються кваліфікованими фахівцямиРейка, брус, дошка обрізна та необрізна, дошка підлоги та терасна, вагонка, фальшбрус… Продукцію можна замовити хвойних та листяних порід. Та ми не зупиняємось і в короткочасній перспективі розширимо нашу лінію товарів</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!--=====================-->
+<!-- Контакти -->
+<!--=====================-->
+
+<div class="contact-block" id="contacts-down">
+  <div class="contact">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+    </svg>
+    <h3>+380 (67) 382-00-89<br>
+      +380 (36) 572-18-75</h3>
+  </div>
+  <div class="contact">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+      <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+      <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+    </svg>
+    <h3>Виробництво<br>
+      35065, Україна, Рівненський р-н, Рівненська обл.,<br> село Лісопіль, вулиця Грушевського, будинок, 3є</h3>
+  </div>
+  
+  <div class="contact">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+    </svg>
+    <h3>lispromltd@gmail.com</h3>
+  </div>
+
+</div>
+
+
+<!--=====================-->
+<!-- Зворотній зв'язок -->
+<!--=====================-->
+<div class="form-feedback-main">
+  <center><h1 style="margin-bottom: 30px; color: white;">ЗВОРОТНІЙ ЗВ'ЯЗОК</h1></center>
+  <div class="feedback-block">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2517.7719155389177!2d26.458641976247144!3d50.87242215689198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMzUwNjUsINCj0LrRgNCw0ZfQvdCwLCDQoNGW0LLQvdC10L3RgdGM0LrQuNC5INGALdC9LCDQoNGW0LLQvdC10L3RgdGM0LrQsCDQvtCx0LsuLCDRgdC10LvQviDQm9GW0YHQvtC_0ZbQu9GMLCDQstGD0LvQuNGG0Y8g0JPRgNGD0YjQtdCy0YHRjNC60L7Qs9C-LCDQsdGD0LTQuNC90L7QuiwgM9GU!5e0!3m2!1sru!2sua!4v1717793479730!5m2!1sru!2sua" width="500" height="450" style="border:0; margin:0; padding: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form class="form-feedback" id="feedback-input">
+      <div class="form-feedback-input">
+        <label for="name"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg></label>
+        <input type="text" name="name" id="name-feedback" placeholder="ПІБ" required><br>
+        <span id="name-error" class="error-message"></span>
+      </div>
+      <div  class="form-feedback-input">
+        <label for="email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg></label>
+        <input type="email" name="email" id="email-feedback" placeholder="Електронна пошта" required><br>
+        <span id="email-error" class="error-message"></span>
+      </div>
+      <center><label for="Text">Текст повідомлення: </label></center>
+      <textarea name="Text" class="text-message" required></textarea>
+      <button type="button" class="send-message">
+        Надіслати повідомлення
+      </button>
+    </form>
+  </div>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3" >
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Помилка</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Ви не ввели всі дані повідомлення!
+    </div>
+  </div>
+</div>
+
+<!--=====================-->
+<!-- Футер -->
+<!--=====================-->
+<footer class="footer-main">
+  <div class="footer-catalog-block">
+    <h3>Каталог</h3>
+    <div class="footer-catalog-items"></div>
+  </div>
+  <div class="footer-info-block">
+    <h3>Інформація</h3>
+    <span><a  class="catalog-footer-span" href="/catalog">Каталог</a></span><br>
+    <span><a  class="catalog-footer-span" href="/">Про компанію</a></span><br>
+    <span><a  class="catalog-footer-span" href="/">Контакти</a></span>
+  </div>
+  <div class="footer-catalog-block">
+    <h3>Контакти</h3>
+    <div class="contact-footer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+      </svg>
+      <h5>Контактний телефон: <br>+380 (67) 382-00-89<br>
+        +380 (36) 572-18-75</h5>
+    </div>
+    <div class="contact-footer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+        <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+        <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+      </svg>
+      <h5>Виробництво<br>
+        35065, Україна, Рівненський р-н, Рівненська обл.,<br> село Лісопіль, вулиця Грушевського, будинок, 3є</h5>
+    </div>
+    <div class="contact-footer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+      </svg>
+      <h5>Email:<br>lispromltd@gmail.com</h5>
+    </div>
+  </div>
+</footer>
+<div onclick="topFunction()" id="myBtn1" class="on-top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="black" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+  </svg>
+</div>
+<!--=====================-->
+<!-- СКРИПТ -->
+<!--=====================-->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="script.js"></script>
+<script src="slider.js"></script>
+<script src="login-check.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+html{
+    min-height:100%;
+}
+.navagation{
+    margin-bottom: 10vh;
+    font-size: x-large;
+    text-align: center;
+}
+
+.block-login{
+    min-width: 300px;
+    max-width: 600px;
+}
+body{
+    color: white;
+    background-image: url(img/login_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.login-back{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+
+    backdrop-filter: blur(10px)  brightness(60%) saturate(80%);
+}
+#liveToast{
+    background-color: rgb(255, 187, 156);
+}

@@ -1,0 +1,56 @@
+.order-block {
+    border: 3px solid #6d6944;
+    display: none;
+    border-radius: 0 0 30px 30px;
+    margin: 10px;
+  }
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #9a9462;
+  }
+
+  .order-main{
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .order-block-none{
+    border: 3px solid #6d6944;
+    
+    margin: 10px;
+  }
+
+  .open-order-info{
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  }
+
+
+  .add-order-driver{
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+	width: 170px;
+	height: 50px;
+	background-color: rgb(142, 118, 1);
+	border: none;
+	transition: .3s;
+}
+.add-order-driver:hover{
+    background-color: rgb(90, 75, 3);
+}
+
+.order-sort{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
